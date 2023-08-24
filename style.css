@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* common style start */
+.display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+p {
+    color: rgba(39, 39, 39, 0.60);
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* common style end */
+
+/* header section style start */
+.header-container {
+    background: rgba(229, 84, 115, 0.10);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px 0 50px;
+}
+
+.header-container h1 {
+    color: #272727;
+    font-size: 75px;
+}
+
+.button-primary {
+    border-radius: 8px;
+    background: #E55473;
+    padding: 20px 40px;
+    border: 0;
+    color: #FFF;
+    font-size: 20px;
+}
+
+/* header section style end */
+
+/* featured-flowers section style start */
+.featured-flowers {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.featured-flowers-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+.featured-flower-1 img {
+    background: rgba(167, 33, 98, 0.15);
+}
+
+.featured-flower-2 img {
+    background: rgba(5, 151, 160, 0.15);
+}
+
+.featured-flower-3 img {
+    background: rgba(71, 125, 17, 0.15);
+}
+
+.featured-flowers-container img {
+    border-radius: 300px 300px 0px 0px;
+    padding: 30px 30px 0 30px;
+    height: 400px;
+    width: 320px;
+}
+
+.featured-flowers-container h5 {
+    color: #272727;
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 35px;
+    text-decoration-line: underline;
+}
+
+/* featured-flowers section style end */
+
+/* customer support style start */
+.customer-support {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 0;
+    border-radius: 8px;
+    background: rgba(39, 39, 39, 0.05);
+    margin: 100px 70px;
+    padding: 40px;
+    text-align: center;
+}
+
+h6 {
+    color: rgba(39, 39, 39, 0.80);
+    font-size: 24px;
+    line-height: 35px;
+}
+
+/* customer support style end */
+
+/* hot deal section style start */
+.hot-deal-container {
+    background: rgba(229, 84, 115, 0.10);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 20px 0 50px;
+    text-align: center;
+}
+
+/* hot deal section style end */
+
+/* Instagram section style Start */
+.Instagram {
+    text-align: center;
+    margin-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.Instagram img {
+    width: 300px;
+}
+
+/* Instagram section style end */
+
+/* Latest Deal section start */
+.content-style {
+    text-align: center;
+    margin-top: 100px
+}
+
+.latest-deals {
+    background-image: url(./image/bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    margin: 100px 60px;
+    border-radius: 8px;
+}
+
+form input {
+    padding: 24px;
+    border: 0;
+    border-radius: 8px;
+    background: #FFF;
+    width: 520px;
+    margin-right: 16px;
+}
+
+/* Latest Deal section end */
+
+footer {
+    background: #111010;
+    padding: 100px;
+}
+
+.payment {
+    border: 0;
+    border-radius: 8px;
+    background: rgba(5, 151, 160, 0.15);
+    margin: 100px 60px;
+    padding: 40px;
+    text-align: center;
+}
+
+@media screen and (max-width:576px) {
+
+    header img,
+    form input {
+        width: 100%;
+    }
+
+    .header-container,
+    .featured-flowers-container,
+    .hot-deal-container,
+    .display-flex,
+    .customer-support {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
